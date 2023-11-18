@@ -28,4 +28,14 @@ func main() {
 	fmt.Fscan(os.Stdin, &age)
 
 	fmt.Println(name, age)
+
+	// Чтение из консоли, вывод в консоль c потока os.Stdin:
+	var name1 string
+	var age1 int
+	fmt.Print("Введите имя: ")
+	fmt.Scan(&name)
+	fmt.Print("Введите возраст: ")
+	fmt.Scan(&age)
+
+	fmt.Println(name1, age1)
 }
